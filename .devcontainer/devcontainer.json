@@ -34,7 +34,7 @@
 			"label": "Hello Remote World",
 			"onAutoForward": "notify"
 		}
-	}
+	},
 
 	// Use 'otherPortsAttributes' to configure any ports that aren't configured using 'portsAttributes'.
 	// "otherPortsAttributes": {
@@ -45,4 +45,4 @@
 	// "postCreateCommand": "sudo chmod a+x \"$(pwd)\" && sudo rm -rf /var/www/html && sudo ln -s \"$(pwd)\" /var/www/html"
 
 	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
-	//"remoteUser": "vscode"
+	"remoteUser": "vscode"
