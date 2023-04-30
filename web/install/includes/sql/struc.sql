@@ -244,3 +244,11 @@ CREATE TABLE IF NOT EXISTS `{prefix}_login_tokens` (
     PRIMARY KEY (`jti`),
     UNIQUE KEY `secret` (`secret`)
 ) ENGINE=InnoDB DEFAULT CHARSET={charset};
+
+CREATE TABLE IF NOT EXISTS `{prefix}_stats` (
+  `steamID` varchar(64) NOT NULL,
+  `points` int NOT NULL,
+  `kills` int NOT NULL,
+  `deaths` int NOT NULL,
+  `assists` int NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET={charset};
